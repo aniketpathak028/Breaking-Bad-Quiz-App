@@ -1,0 +1,17 @@
+#title {
+    background-color: #008037;
+}
+
+#title .title {
+    color: #FFC300;
+}
+
+#my-image {
+    max-height: 270px;
+    max-width: 270px;
+    border: 1.4px solid black;
+}
+
+.is-horizontal-center {
+  justify-content: center;
+}
