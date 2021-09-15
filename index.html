@@ -7,8 +7,11 @@
     <title>Breaking-Bad Quiz App</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 <body>
+    <!-- Background-Overlay & Image -->
+    <div class="bg-image">
         <!-- navbar-start -->
         <div class="navbar">
             <header class="header">
@@ -20,29 +23,48 @@
                 <ul class="menu">
                     <li><a href="about-project.html">About Project</a></li>
                     <li><a href="developer.html">Developer</a></li>
-                    <li><a href="#careers">Glossary</a></li>
-                    <li><a href="#careers">Developer</a></li>
                 </ul>
             </header>
         </div>
-        <!-- navbar-end -->
+        <div class="overlay">
+            <!-- Start-Quiz Button -->
+            <button class="button is-large is-rounded start_btn" id="start-button"> Start Quiz</button>
+    
+            <!-- Quiz-Instruction Box -->
+            <div class="info_box">
+                <div class="info-title"><span>Instructions</span></div>
+                <div class="info-list">
+                    <div class="info">
+                        <figure class="image is-16x16" style="display: inline-block;">
+                            <img src="assets/heisenburg.png" style="display: inline-block;" class="rotateimg13">
+                        </figure> There are 10 questions in total
+                    </div>
+                    <div class="info">
+                        <figure class="image is-16x16" style="display: inline-block;">
+                            <img src="assets/heisenburg.png" style="display: inline-block;" class="rotateimg13">
+                        </figure> Once you select your answer, it can't be undone.
+                    </div>
+                    <div class="info">
+                        <figure class="image is-16x16" style="display: inline-block;">
+                            <img src="assets/heisenburg.png" style="display: inline-block;" class="rotateimg13">
+                        </figure> You can't exit from the Quiz while you're playing.
+                    </div>
+                    <div class="info">
+                        <figure class="image is-16x16" style="display: inline-block;">
+                            <img src="assets/heisenburg.png" style="display: inline-block;" class="rotateimg13">
+                        </figure> You'll get points on the basis of your correct answers.
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="quit">Quit</button>
+                    <button class="restart">Continue</button>
+                </div>
+            </div>
+        </div>
+    </div>
+            
+    <!-- Javascript code -->
+    <script src="index.js"></script>
 
-        <!-- description-section start-->
-        <section class="section has-background-warning-light">
-            <div class="container">
-                <p>Are you a Breaking Bad fan too? Well, let's find out, here is a small, quick, and an interesting quiz-test for you to
-                    test your memory associated with all the Breaking Bad episodes.</p>
-                    <br>
-                <p class="has-text-weight-bold is-italic">Instructions:</p>
-                <ul>
-                    <li>There shall be 10 questions, all compulsory!</li>
-                    <li>A score of 1 point shall be awarded, for each question answered correctly</li>
-                    <li>In each question, a random quote shall be provided, from any episode of Breaking Bad, and you need to correctly guess the character</li>
-                    <li>There shall be 4 options to choose from</li>
-                </ul>
-            </div>           
-        </section>
-
-        <!-- description-section start-->
 </body>
 </html>
