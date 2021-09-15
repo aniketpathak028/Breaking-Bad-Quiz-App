@@ -1,14 +1,16 @@
-/* --------------------------navbar-start--------------------------------- */
+/* navbar*/
 body {
   margin: 0;
-  font-family: Helvetica, sans-serif;
-  background-color: #f4f4f4;
+  overflow-y: hidden;
 }
 
 .header a {
   color: #FFC300;
 }
 
+.navbar{
+  max-height: 70px;
+}
 /* header */
 
 .header {
@@ -17,6 +19,7 @@ body {
   position: fixed;
   width: 100%;
   z-index: 3;
+  max-height: 100%;
 }
 
 .header ul {
@@ -141,4 +144,157 @@ body {
   }
 }
 /* --------------------------navbar-end--------------------------------- */
+
+/* Background Overlay & Image */
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+.bg-image {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url("assets/bg-2.jpg");
+}
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.26);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Start-Quiz Button */
+.start_btn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFC300;
+    background: #008037;
+    border: black;
+}
+
+.start_btn,
+.info_box,
+.quiz_box,
+.result_box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.info_box.activeInfo,
+.quiz_box.activeQuiz,
+.result_box.activeResult{
+    opacity: 1;
+    z-index: 5;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* Quiz-Instruction Box */
+.info_box{
+    width: 45%;
+    background: #ffe08a;
+    border-radius: 25px;
+    transform: translate(-50%, -50%) scale(0.9);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.info_box .info-title{
+    height: 60px;
+    width: 100%;
+    background: #008037;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+    border-radius: 25px 25px 0 0;
+    font-size: 20px;
+    font-weight: 900;
+    text-align: center;
+    color: #FFC300;
+}
+
+.info_box .info-list{
+    padding: 15px 30px;
+}
+
+.info_box .info-list .info{
+    margin: 5px 0;
+    font-size: 17px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+/* rotating the icon at an angle */
+.rotateimg13 {
+  -webkit-transform:rotate(-13deg);
+  -moz-transform: rotate(-13deg);
+  -ms-transform: rotate(-13deg);
+  -o-transform: rotate(-13deg);
+  transform: rotate(-13deg);
+}
+
+
+.info_box .buttons{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 30px;
+    border-top: 1px solid black;
+    margin-bottom: 3%;
+    padding-top: 10px;
+}
+
+.info_box .buttons button{
+    margin: 0 5px;
+    height: 40px;
+    width: 100px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #008037;
+    transition: all 0.3s ease;
+}
+
+/* Styles for Buttons on Info-BOX */
+.buttons button.restart{
+    color: #FFC300;
+    background: #008037;
+}
+
+.buttons button.restart:hover{
+    background: #008037;
+}
+
+.buttons button.quit{
+    color: black;
+    background: #fff;
+}
+
+.buttons button.quit:hover{
+    color: #FFC300;
+    background: #008037;
+}
 
