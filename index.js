@@ -74,3 +74,64 @@ continue_btn.onclick = () => {
         queCounter(1); //passing 1 parameter to queCounter
     }, 4000)
 }
+
+let que_count = 0;
+let que_numb = 1;
+let userScore = 0;
+let counter;
+let counterLine;
+let widthValue = 0;
+
+const restart_quiz = result_box.querySelector(".buttons .restart");
+const quit_quiz = result_box.querySelector(".buttons .quit");
+
+// if restartQuiz clicked get questions again
+
+restart_quiz.addEventListener('click', async (e) => {
+   await getQuestions();
+})
+
+// if restartQuiz button clicked
+
+restart_quiz.onclick = () => {
+    setTimeout(() => {
+      quiz_box.classList.add("activeQuiz"); //show quiz box
+      result_box.classList.remove("activeResult"); //hide result box
+      que_count = 0;
+      que_numb = 1;
+      userScore = 0;
+      widthValue = 0;
+      showQuetions(que_count); //calling showQestions function
+      queCounter(que_numb); //passing que_numb value to queCounter
+      clearInterval(counter); //clear counter
+      clearInterval(counterLine); //clear counterLine
+      next_btn.classList.remove("show"); //hide the next button
+    }, 4000);
+}
+
+// if quitQuiz button clicked
+
+quit_quiz.onclick = ()=>{
+    window.location.reload(); //reload the current window
+}
+
+const next_btn = document.querySelector("footer .next_btn");
+const bottom_ques_counter = document.querySelector("footer .total_que");
+
+// if Next Que button clicked
+
+next_btn.onclick = ()=>{
+    if(que_count < questions.length - 1){ //if question count is less than total question length
+        que_count++; //increment the que_count value
+        que_numb++; //increment the que_numb value
+        showQuetions(que_count); //calling showQestions function
+        queCounter(que_numb); //passing que_numb value to queCounter
+        clearInterval(counter); //clear counter
+        clearInterval(counterLine); //clear counterLine
+        next_btn.classList.remove("show"); //hide the next button
+    }else{
+        clearInterval(counter); //clear counter
+        clearInterval(counterLine); //clear counterLine
+        showResult(); //calling showResult function
+    }
+}
