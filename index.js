@@ -196,3 +196,40 @@ function optionSelected(answer){
     }
     next_btn.classList.add("show"); //show the next button if user selected any option
 }
+
+// showing the final result to user 
+
+function showResult(){
+    info_box.classList.remove("activeInfo"); //hide info box
+    quiz_box.classList.remove("activeQuiz"); //hide quiz box
+    result_box.classList.add("activeResult"); //show result box
+  const scoreText = result_box.querySelector(".score_text");
+  const comment = result_box.querySelector(".complete_text");
+    if (userScore >= 4){ // if user scored more than 7
+        let commentTag = 'You are a true Breaking-Bad fan';
+        comment.innerHTML = commentTag;
+      //creating a new span tag and passing the user score number and total question number
+        let scoreTag = '<span>Congrats! You got <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
+        scoreText.innerHTML = scoreTag;  //adding new span tag inside score_Text
+    }
+    else if (userScore >= 2) { // if user scored more than 5
+        let commentTag = 'You are a Breaking-Bad Fan';
+        comment.innerHTML = commentTag;
+        let scoreTag = '<span>Good Job! You got <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
+        scoreText.innerHTML = scoreTag;
+    }
+    else { // if user scored less than 5
+        let commentTag = 'Poor performance :(';
+        comment.innerHTML = commentTag;
+        let scoreTag = '<span>Sorry! You got only <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
+        scoreText.innerHTML = scoreTag;
+    }
+}
+
+// counts the question number and tells the ongoing number
+
+function queCounter(index){
+    //creating a new span tag and passing the question number and total question
+    let totalQueCounTag = '<span><p>Question</p><p>'+ index +'</p></span>';
+    bottom_ques_counter.innerHTML = totalQueCounTag;  //adding new span tag inside bottom_ques_counter
+}
