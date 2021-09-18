@@ -460,3 +460,62 @@ footer button.show{
     pointer-events: auto;
     transform: scale(1);
 }
+
+.result_box{
+    background: #ffe08a;
+    border-radius: 25px;
+    display: flex;
+    padding: 25px 30px;
+    width: 450px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    transform: translate(-50%, -50%) scale(0.9);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    border: 2px solid black;
+}
+
+.result_box .icon img{
+   margin-bottom: 10px;
+    margin-top: 10px; 
+    max-height: 170px;
+    max-width: 70px;
+}
+
+.result_box .complete_text{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.result_box .score_text span{
+    display: flex;
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.result_box .score_text span p{
+    padding: 0 4px;
+    font-weight: 700;
+}
+
+.result_box .buttons{
+    display: flex;
+    margin: 20px 0;
+}
+
+.result_box .buttons button{
+    margin: 0 10px;
+    height: 45px;
+    padding: 0 20px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #008037;
+    transition: all 0.3s ease;
+}
