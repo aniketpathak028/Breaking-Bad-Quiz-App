@@ -15,3 +15,18 @@
 .is-horizontal-center {
   justify-content: center;
 }
+
+body{
+    background-color: #f0ca9edc;
+}
+
+#c-1{
+    border: 1px solid black;
+}
+
+.icons a{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
