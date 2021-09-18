@@ -1,35 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Breaking-Bad Quiz App</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-    <link rel="stylesheet" href="index.css">
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-</head>
-<body>
-    <!-- Background-Overlay & Image -->
-    <div class="bg-image">
-        <!-- navbar-start -->
-        <div class="navbar">
-            <header class="header">
-                <a href="" class="logo">
-                    <img src="assets/logo.png" alt="site logo" id="brand-img">
-                </a>
-                <input class="menu-btn" type="checkbox" id="menu-btn" />
-                <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-                <ul class="menu">
-                    <li><a href="about-project.html">About Project</a></li>
-                    <li><a href="developer.html">Developer</a></li>
-                </ul>
-            </header>
-        </div>
-        <div class="overlay">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Breaking-Bad Quiz App</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+        <link rel="stylesheet" href="index.css">
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    </head>
+
+    <body>
+        <!-- Background-Overlay & Image -->
+        <div class="bg-image">
+            <!-- navbar-start -->
+            <div class="navbar">
+                <header class="header">
+                    <a href="" class="logo">
+                        <img src="assets/logo.png" alt="site logo" id="brand-img">
+                    </a>
+                    <input class="menu-btn" type="checkbox" id="menu-btn" />
+                    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                    <ul class="menu">
+                        <li><a href="about-project.html">ABOUT PROJECT</a></li>
+                        <li><a href="developer.html">DEVELOPER</a></li>
+                    </ul>
+                </header>
+            </div>
+            <div class="overlay">
             <!-- Start-Quiz Button -->
-            <button class="button is-large is-rounded start_btn" id="start-button"> Start Quiz</button>
-    
+            <!-- <button class="button is-large is-rounded start_btn" id="start-button"> Start Quiz</button> -->
+            <button class="buttn btnn roundd filld" id="start-button">Start-Quiz</button>
             <!-- Quiz-Instruction Box -->
             <div class="info_box">
                 <div class="info-title"><span>Instructions</span></div>
@@ -37,17 +39,22 @@
                     <div class="info">
                         <figure class="image is-16x16" style="display: inline-block;">
                             <img src="assets/heisenburg.png" style="display: inline-block;" class="rotateimg13">
-                        </figure> There are 10 questions in total
+                        </figure> There are 10 questions in total with 4 options each
                     </div>
                     <div class="info">
                         <figure class="image is-16x16" style="display: inline-block;">
                             <img src="assets/heisenburg.png" style="display: inline-block;" class="rotateimg13">
-                        </figure> Once you select your answer, it can't be undone.
+                        </figure> Each question is a quote from Breaking-Bad, and you need to guess it's author!
                     </div>
                     <div class="info">
                         <figure class="image is-16x16" style="display: inline-block;">
                             <img src="assets/heisenburg.png" style="display: inline-block;" class="rotateimg13">
-                        </figure> You can't exit from the Quiz while you're playing.
+                        </figure> Once an option is selected, you can't change it
+                    </div>
+                    <div class="info">
+                        <figure class="image is-16x16" style="display: inline-block;">
+                            <img src="assets/heisenburg.png" style="display: inline-block;" class="rotateimg13">
+                        </figure> You can't exit from the Quiz while it's playing
                     </div>
                     <div class="info">
                         <figure class="image is-16x16" style="display: inline-block;">

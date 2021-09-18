@@ -1,4 +1,4 @@
-/* navbar*/
+* navbar*/
 body {
   margin: 0;
   overflow-y: hidden;
@@ -6,6 +6,7 @@ body {
 
 .header a {
   color: #FFC300;
+  font-weight: 600;
 }
 
 .navbar{
@@ -20,6 +21,7 @@ body {
   width: 100%;
   z-index: 3;
   max-height: 100%;
+  border-bottom: 2px solid black;
 }
 
 .header ul {
@@ -48,7 +50,7 @@ body {
 }
 
 #brand-img {
-    max-height: 65px;
+    max-height: 63px;
 }
 
 /* menu */
@@ -181,7 +183,45 @@ body {
     transform: translate(-50%, -50%);
     color: #FFC300;
     background: #008037;
-    border: black;
+    border: 2px solid black;
+}
+
+.buttn {
+  border: none;
+  padding: 20px 40px; 
+  max-width: 20%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 3%;
+  cursor: pointer;
+  position: absolute;
+}
+
+/* rounded buttons */
+
+.btnn.roundd {
+  border-radius: 25px; 
+  color: #FFC300;
+}
+
+/* rounded w/ fill buttons */
+
+.btnn.roundd.filld{
+    background: #008037;
+    border: 2px solid black;
+}
+.btnn.roundd.filld:hover {
+    background: #02632c;
+    color: #FFC300;
+    border-color: #FFC300;
+    box-shadow:0 3px 15px #e0cf4d;;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
 }
 
 .start_btn,
@@ -220,7 +260,8 @@ body {
     height: 60px;
     width: 100%;
     background: #008037;
-    border-bottom: 1px solid black;
+    border-bottom: 1.5px solid black;
+    border-top: 2px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
