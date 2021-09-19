@@ -2,112 +2,112 @@
 const questions = [
     {
     numb: 1,
-    question: "What does HTML stand for?",
-    answer: "Hyper Text Markup Language",
+    question: `"You Know the expression it’s been a pleasure... well it hasn’t." -?`,
+    answer: "Mike Ehrmantraut",
     options: [
-      "Hyper Text Preprocessor",
-      "Hyper Text Markup Language",
-      "Hyper Text Multiple Language",
-      "Hyper Tool Multi Language"
+      "Mike Ehrmantraut",
+      "Domingo Molina",
+      "Theodore Beneke",
+      "Elliot Schwartz"
     ]
   },
     {
     numb: 2,
-    question: "What does CSS stand for?",
-    answer: "Cascading Style Sheet",
+    question: `"Yeah, totally Kafkaesque" -?`,
+    answer: "Jesse Pinkman",
     options: [
-      "Common Style Sheet",
-      "Colorful Style Sheet",
-      "Computer Style Sheet",
-      "Cascading Style Sheet"
+      "George Merkert",
+      "Tuco Salamanca",
+      "Jesse Pinkman",
+      "Steven Gomez"
     ]
   },
     {
     numb: 3,
-    question: "What does PHP stand for?",
-    answer: "Hypertext Preprocessor",
+    question: `"Chemistry is the study of matter, but I prefer to see it at the study of change." -?`,
+    answer: "Walter White",
     options: [
-      "Hypertext Preprocessor",
-      "Hypertext Programming",
-      "Hypertext Preprogramming",
-      "Hometext Preprocessor"
+      "Henry Schrader",
+      "Walter White",
+      "Marco & Leonel Salamanca",
+      "Gale Boetticher"
     ]
   },
     {
     numb: 4,
-    question: "What does SQL stand for?",
-    answer: "Structured Query Language",
+    question: `"You don’t need a criminal lawyer. You need a criminal lawyer" -?`,
+    answer: "Jesse Pinkman",
     options: [
-      "Stylish Question Language",
-      "Stylesheet Query Language",
-      "Statement Question Language",
-      "Structured Query Language"
+      "Mrs. Pinkman",
+      "Wendy S.",
+      "Donald Margolis",
+      "Jesse Pinkman"
     ]
   },
     {
     numb: 5,
-    question: "What does XML stand for?",
-    answer: "eXtensible Markup Language",
+    question: `"Mas his death satisfy you." -?`,
+    answer: "Gus Fring",
     options: [
-      "eXtensible Markup Language",
-      "eXecutable Multiple Language",
-      "eXTra Multi-Program Language",
-      "eXamine Multiple Language"
+      "Victor",
+      "Gus Fring",
+      "Huell Babineaux",
+      "Jane Margolis"
     ]
   },
   {
     numb: 6,
-    question: "What does SQL stand for?",
-    answer: "Structured Query Language",
+    question: `"Yo 148, 3-to-the-3-to-the-6-to-the-9. Representin’ the ABQ. What up, biatch? Leave it at the tone!" -?`,
+    answer: "Jesse Pinkman",
     options: [
-      "Stylish Question Language",
-      "Stylesheet Query Language",
-      "Statement Question Language",
-      "Structured Query Language"
+      "Gustavo Fring",
+      "Gretchen Schwartz",
+      "Jesse Pinkman",
+      "Bogdan Wolynetz"
     ]
   },
   {
     numb: 7,
-    question: "What does SQL stand for?",
-    answer: "Structured Query Language",
+    question: `"Tread lightly." -?`,
+    answer: "Walter White",
     options: [
-      "Stylish Question Language",
-      "Stylesheet Query Language",
-      "Statement Question Language",
-      "Structured Query Language"
+      "Walter White",
+      "Skinny Pete",
+      "Saul Goodman",
+      "Tomás Cantillo"
     ]
   },
   {
     numb: 8,
-    question: "What does SQL stand for?",
-    answer: "Structured Query Language",
+    question: `"I'm waiting for the cancer to come back." -?`,
+    answer: "Skyler White",
     options: [
-      "Stylish Question Language",
-      "Stylesheet Query Language",
-      "Statement Question Language",
-      "Structured Query Language"
+      "Francesca Liddy",
+      "Adam Pinkman",
+      "Theodore Beneke",
+      "Skyler White"
     ]
   },
   {
     numb: 9,
-    question: "What does SQL stand for?",
-    answer: "Structured Query Language",
+    question: `"Funyuns are awesome." -?`,
+    answer: "Jesse Pinkman",
     options: [
-      "Stylish Question Language",
-      "Stylesheet Query Language",
-      "Statement Question Language",
-      "Structured Query Language"
+      "Theodore Beneke",
+      "Jesse Pinkman",
+      "Christian Ortgea",
+      "Cynthia"
     ]
   },
   {
     numb: 10,
-    question: "What does SQL stand for?",
-    answer: "Structured Query Language",
+    question: `"Some people are immune to good advice." -?`,
+    answer: "Saul Goodman",
     options: [
-      "Stylish Question Language",
-      "Stylesheet Query Language",
-      "Statement Question Language",
-      "Structured Query Language"
+      "Lydia Rodarte-Quayle",
+      "Skinny Pete",
+      "Saul Goodman",
+      "Marie Schrader"
     ]
   },
 ];
