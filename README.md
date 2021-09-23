@@ -37,7 +37,7 @@ read the API docs to get a better idea.
 #### Fetching a character by id
 
 ```http
-  GET /api/characters/`${id}`
+  GET /api/characters/4
 ```
 
 | Parameter | Type     | Description                       |
