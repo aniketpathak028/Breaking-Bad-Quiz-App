@@ -7,7 +7,7 @@ by playing a fun quiz 😉. The quiz has been
 built using an API that fetches all kinds 
 of information regarding the show.
 
-![Breaking Bad Quiz App](image1)
+![Breaking Bad Quiz App](thumbnail.png)
 
 ## Demo
 
