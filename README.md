@@ -46,19 +46,19 @@ read the API docs to get a better idea.
 
 ## FAQ
 
-#### Q. How does is work?
+#### Q1. How does is work?
 
 Ans: So, every person has to answer 10 Questions, each with 
 4 options and based on his/her score he/she will be judged
 whether or not he/she is a true fan. 
 
-#### Q. I got same options in some questions?
+#### Q2. I got same options in some questions?
 
 Ans: Yeah, that can happen, as the options are generated randomly
 hence, I cannot guarantee that all options will be different,
 however, I am working to resolve this bug.
 
-#### Q. What API does this project use?
+#### Q3. What API does this project use?
 
 Ans: This project uses the Breaking Bad API, linked below: 
 
