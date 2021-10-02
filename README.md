@@ -87,6 +87,6 @@ Contributions are always welcome!
   
 ## Author
 
-- [Aniket Pathak](https://www.github.com/aniketpathak028)
+[Aniket Pathak](https://www.github.com/aniketpathak028)
 
   
