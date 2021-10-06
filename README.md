@@ -44,7 +44,7 @@ read the API docs to get a better idea.
 
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
-| `id`      | `number` | **Required**. Id of item to fetch |
+| `id`      | `number` | **Required**. Id of character to fetch |
 
 ## FAQ
 
