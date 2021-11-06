@@ -18,34 +18,6 @@ of information regarding the show.
 ![Alt Text](https://media.giphy.com/media/GlRymCW81CXygO14pV/giphy.gif?cid=790b7611aec87927656fdec1dc62dded583e82d481fe440c&rid=giphy.gif&ct=g)
 ![Alt Text](https://media.giphy.com/media/NVmdgQYVJiKoPO7Pfx/giphy.gif)
 
-## API Reference
-I have used The Breaking Bad API for this
-project, you can head on their site and
-read the API docs to get a better idea.
-
-
-#### Fetching quotes
-
-```http
-  GET /api/quote/random
-```
-
-#### Fetching a random character
-
-```http
-  GET /api/character/random
-```
-
-#### Fetching a character by id
-
-```http
-  GET /api/characters/4
-```
-
-| Parameter | Type     | Description                       |
-| :-------- | :------- | :-------------------------------- |
-| `id`      | `number` | **Required**. Id of character to fetch |
-
 ## FAQ
 
 #### Q1. How does is work?
@@ -66,27 +38,6 @@ Ans: This project uses the Breaking Bad API, linked below:
 
 [The Breaking Bad API](https://breakingbadapi.com/)
 
-  
-## 🚀 About Me
-I'm a Web Developer, currently learning the
-MERN stack. I believe in learning, by doing, 
-hence, I keep building fun projects as 
-such to apply my knowledge and skills 🙂
-
-  
-## Feedback
-
-If you have any feedback, please reach out to me at aniketpathak028@gmail.com
-
-  
-## Contributing
-
-Contributions are always welcome!
-
-
-  
 ## Author
 
 [Aniket Pathak](https://www.github.com/aniketpathak028)
-
-  
