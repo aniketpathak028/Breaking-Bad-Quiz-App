@@ -95,6 +95,7 @@ restart_quiz.addEventListener('click', async (e) => {
 // if restartQuiz button clicked
 
 restart_quiz.onclick = () => {
+  restart_quiz.innerHTML = 'Loading...';
     setTimeout(() => {
       quiz_box.classList.add("activeQuiz"); //show quiz box
       result_box.classList.remove("activeResult"); //hide result box
