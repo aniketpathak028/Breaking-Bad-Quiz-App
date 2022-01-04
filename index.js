@@ -67,6 +67,7 @@ exit_btn.onclick = ()=>{
 // if continueQuiz button clicked
 
 continue_btn.onclick = () => {
+  continue_btn.innerHTML = 'Loading...';
     setTimeout(() => {
         info_box.classList.remove("activeInfo"); //hide info box
         quiz_box.classList.add("activeQuiz"); //show quiz box
