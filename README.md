@@ -7,7 +7,6 @@ by playing a fun quiz 😉. The quiz has been
 built using an API that fetches all kinds 
 of information regarding the show.
 
-**Live Preview** : [The Breaking Bad Quiz App](https://aniketpathak028.github.io/Breaking-Bad-Quiz-App/)
 
 ![Breaking Bad Quiz App](thumbnail.png)
 
